@@ -1,20 +1,30 @@
 ## Hi there 👋
-<div align="center">
-  <img src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" width="100px" alt="GitHub Readme Stats" />
-  <h1 style="font-size: 28px; margin: 10px 0;">GitHub Readme Stats</h1>
-  <p>Get dynamically generated GitHub stats on your READMEs!</p>
-</div>
-<!--
-**vitorginez88/vitorginez88** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+name: Update README cards
+name: Update README cards
 
-Here are some ideas to get you started:
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
