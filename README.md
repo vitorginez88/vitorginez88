@@ -2,9 +2,9 @@
 **`Estudande de TI`**
 
 
-💻 Estudando Python   
-🚀 Compartilhando minha evolução no GitHub   
-👾 Confira meus repositórios
+💻 Estudando Python.   
+🚀 Compartilhando minha evolução no GitHub.   
+👾 Confira meus repositórios!!
 ### 🧠 Linguagens e ferramentas:
 
 <img 
