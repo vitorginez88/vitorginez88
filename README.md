@@ -1,5 +1,12 @@
-Olá  
-### 👾 Linguagens:
+ # 👾 Vitor Ginez
+**`Estudande de TI`**
+
+Olá, Seja bem-vindo ao meu perfil do GitHub!! <br/>
+Me chamo Vitor, tenho 19 anos e estou cursando ciências da computação.<br/>
+confira meus repositórios! 
+
+
+### 🧠 Linguagens e ferramentas:
 
 <img 
     align="left" 
@@ -25,5 +32,8 @@ Olá
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" 
 />
+<br/>
+
+
 
 
