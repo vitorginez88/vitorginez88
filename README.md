@@ -1,11 +1,10 @@
- # 👾 Vitor Ginez
+# Olá, eu sou Vitor 👋
 **`Estudande de TI`**
 
-Olá, Seja bem-vindo ao meu perfil do GitHub!! <br/>
-Me chamo Vitor, tenho 19 anos e estou cursando ciências da computação.<br/>
-confira meus repositórios! 
 
-
+💻 Estudando Python   
+🚀 Compartilhando minha evolução no GitHub   
+👾 Confira meus repositórios
 ### 🧠 Linguagens e ferramentas:
 
 <img 
